@@ -33,7 +33,7 @@ public class ArrayDequeCreator extends PriorityQueue<String> {
         }
     }
 
-    private <T> void reverse(Deque<T> source,  Queue<T>destination) {
+    private <T> void reverse(Deque<T> source, Queue<T> destination) {
         T polled = source.pollLast();
         if (polled != null) {
             destination.add(polled);
